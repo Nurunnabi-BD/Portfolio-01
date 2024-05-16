@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;700&family=Tiro+Bangla:ital@0;1&family=Young+Serif&display=swap');
+
+html{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.625rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 4.5rem;
+}
+.container{
+    max-width: 1200px;
+    margin: auto ;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.button{
+    display: flex;
+    gap: 1.5rem;
+}
+.button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border-radius: 0.8rem;
+    color: #000000;
+    transition: 0.4s;
+}
+.button a:hover{
+    background-color: #e6dfdf;
+    transition-duration: 0.8s;
+}
+.sec1{
+    padding: 8rem 0;
+    background-color: #F5F8FC;
+}
+.sec1-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.sec1-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-image{
+    -webkit-mask-image: url(image/MAsking.png);
+    mask-image: url(image/MAsking.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;   
+}
+.sec1-content h5{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #666666;
+    margin: 1rem 0;
+}
+.sec1-content p{
+    font-size: 1.7rem;
+    text-align: center;
+    color: #666666;
+    margin: 1rem 0;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+.icon div svg{
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.icon div svg:hover{
+    cursor: pointer;
+    transform: translateY(-0.6rem);
+    transition-duration: 0.8s;
+}
+.icon div{
+    padding: 0 1rem;
+    border-right: 0.2rem solid #666666;
+}
+.cv-button a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.5rem 4rem;
+    color: black;
+    border: 0.2rem solid #666666;
+    border-radius: 5rem;
+    transition: 0.4s;
+}
+.cv-button a:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    transition-duration: 0.8s;
+    transform: translateY(-0.6rem);
+}
+.section2{
+    display: flex;
+    align-items: center;
+    padding: 8rem 0;
+    gap: 7rem;
+}
+.sec2-content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    gap: 4rem;
+    justify-content: space-around;
+    padding-right: 7rem;
+}
+.sec2-content-aboutme h1{
+    margin-bottom: 4rem;
+}
+.sec2-content-aboutme h5{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 1.5rem;
+}
+.sec2-content-aboutme h5 span{
+    font-weight: 600;
+    color: #1A1A1A;
+}
+.sec2-content-aboutme p{
+    font-size: 1.8rem;
+    color: #666666;
+    /* text-align: justify; */
+}
+.skill-level h3{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.skill-level p{
+    font-size: 1.8rem;
+    color: #666666;
+}
+.line{
+    height:1.2rem ;
+    border: 0.1rem solid black;
+    padding: 0.3rem;
+}
+.line div{
+    background-color: #34495E;
+    height:1.2rem ;
+}
+.line1{
+    width: 90%;
+}
+.line2{
+    width: 80%;
+}
+.line3{
+    width: 60%;
+}
+.line4{
+    width: 70%;
+}
+.line5{
+    width: 90%;
+}
+.line6{
+    width: 85%;
+}
+.skill-level-line{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: space-between;
+    width: 100%;
+    gap: 3rem;
+    row-gap: 4rem;
+}
+.skill-level-line h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.see-more-button{
+    margin-top: 2rem;
+}
+.see-more-button a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    padding: ;
+    border: 0.3rem solid black;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    transition-duration: 0.8s;
+
+}
+.see-more-button a:hover{
+    background-color: #000000;
+    color: white;
+}
+.sec2-image img{
+    max-width: 45rem;
+    border-radius: 2rem;
+    filter: grayscale(100%);
+}
+.sec3{
+    background-color: #F5F8FC;
+    padding: 10rem 0;
+}
+.sec3-allcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.sec3-content p{
+    font-size: 1.8rem;
+    color: #666666;
+    margin-top: 2rem;
+}
+.sec3-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.alldive{
+    padding: 5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 2rem;
+    transition-duration: 0.8s;
+}
+.alldive h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.alldive a{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #666666;
+    transition-duration: 0.8s;
+}
+.alldive a:hover{
+    color: white;
+}
+.alldive:hover{
+    scale: 1.1;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+}
+.sec4-content p{
+    font-size: 1.8rem;
+    color: #666666;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.sec4-images{
+    height: 40rem;
+    /* width: 50%; */
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.sec4-images img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 0.2rem black solid;
+    filter: grayscale(100%);
+    transition: all ease-in-out 1.3s;
+}
+.sec4-images img:hover{
+    width: 100%;
+    filter: none;
+    cursor: pointer;
+    object-fit:contain;
+}
+.sec4{
+    margin: 8rem 0;
+}
+.sec5{
+    background-color:#F5F8FC ;
+    padding: 10rem 0;
+}
+.sec5-content p{
+    font-size: 1.8rem;
+    color: #666666;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.sec5-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+.sec5-div-content{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transition-duration: 0.8s;
+}
+.sec5-div-content:hover{
+    cursor: pointer;
+}
+.sec5-image{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.sec5-image img{
+    width: 10rem;
+    border-radius: 50%;
+}
+.sec5-image h3{
+    font-size: 2.5rem;
+}
+.sec5-div-content  p{
+    font-size: 1.8rem;
+    color: #666666;
+    text-align: justify;
+}
+.sec6{
+    padding: 8rem 0;
+}
+.sec6-content p{
+    font-size: 1.8rem;
+    color: #666666;
+    margin: 2.5rem 0;
+}
+.sec6-image-div img{
+    max-width: 40rem;
+    height: 55rem;
+    border-radius: 1rem;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.sec6-image-div:hover img{
+    cursor: pointer;
+}
+.sec6-div{
+    display: flex;
+    gap: 2rem;
+    overflow:auto;
+}
+.sec6-image-div p{
+    font-size: 1.8rem;
+    color: #666666;
+    margin: 1.5rem 0;
+}
+.sec6-image-div h2{
+    font-size:3rem ;
+}
+.footer{
+    padding: 8rem 0;
+    background-color: #F5F8FC;
+}
+.contact1 svg{
+    width: 3rem;
+}
+.footer-content p{
+    font-size: 1.8rem;
+    color: #666666;
+    margin: 1.5rem 0;
+    margin-bottom: 6rem ;
+}
+.footer-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+.contact1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+.contact1 div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.contact1 div p{
+    font-size: 1.8rem;
+    color: #666666;
+}
+.contact1 div p span{
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+}
+.contact2{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 5rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+.contact2 p{
+    font-size: 1.8rem;
+    color: #666666;
+}
+.contact2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact2 form input{
+    font-size: 1.8rem;
+    color: #666666;
+    padding: 1.5rem 0;
+    border:none;
+    border-bottom: 0.2rem solid #666666;
+}
+/* .contact2 form div{
+    height: 0.3rem;
+    border-bottom: 0.2rem solid #666666;
+} */
+.submit-button{
+    width: 16rem;
+    border-radius: 1rem;
+    border: 0.3rem solid black !important;
+    color: #000000 !important;
+    background-color: white;
+    transition: 0.4s ease-in-out;
+}
+.submit-button:hover{
+    cursor: pointer;
+    background-color: #000000;
+    color: white !important; 
+}
+@media(max-width: 1000px){
+    .container{
+        padding: 3rem;
+    }
+    .section2{
+        gap: 3rem;
+    }
+    .sec2{
+        margin: 10rem 0;
+    }
+    .sec3-div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 900px){
+    .button{
+        gap: 0.3rem;
+    }
+    .button a{
+        padding: 0.3rem 1.5rem;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-div{
+        gap: 4rem;
+    }
+    .sec2-image img{
+        display: none;
+    }
+}
+@media(max-width: 750px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+    .footer-div{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+    .sec6-image-div img{
+        max-width: 30rem;
+        height: 35rem;
+    }
+}
+@media(max-width: 600px){
+    html{
+        font-size: 0.5rem;
+    }
+    .sec5-div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width: 500px){
+    html{
+        font-size: 0.3125rem;
+    }
+}
